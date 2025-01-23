@@ -44,3 +44,8 @@ class Tree:
             self.postorder(node,right)
             print(node.value, end=" ")
 
+    def preorder(self,node):
+        if node:
+            print(node.value, end=" ")
+            self.preorder(node,left)
+            self.preorder(node.right)
